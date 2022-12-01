@@ -1,0 +1,55 @@
+.sai_feature_bar {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.sai_feature_bar div {
+  width: 38px;
+  height: 3px;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  margin-bottom: 0.5rem;
+}
+.sai_feature {
+  margin: 4rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sai_feature_text {
+  margin-top: 20px;
+  color: white;
+}
+h2 {
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: large;
+  }
+  .sai_feature_text {
+    font-size: small;
+  }
+  .sai_feature {
+    margin: 3.5rem 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 550px) {
+  h2 {
+    font-size: small;
+  }
+  .sai_feature_text {
+    font-size: smaller;
+  }
+  .sai_feature {
+    margin: 1rem 0rem;
+  }
+  .sai_feature_text {
+    margin-top: 10px;
+  }
+}

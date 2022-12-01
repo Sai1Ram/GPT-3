@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+/* body {
+  background: var(--color-bg);
+} */
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+.gradient_bg {
+  background: -moz-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #002853 0%,
+    #040c18 100%
+  );
+  background: -o-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+  background: -ms-radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+  background: radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+}
+.gradient_text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section_padding {
+  padding: 4rem 6rem;
+}
+.section_margin {
+  margin: 4rem 6rem;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 700px) {
+  .section_margin {
+    margin: 4rem;
+  }
+  .section_padding {
+    padding: 4rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .section_margin {
+    margin: 2rem 2rem;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+  }
+}
+#page > span {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-bar);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  border-radius: 50%;
+  animation: cursorAnimation 0.7s ease forwards;
+}
+@keyframes cursorAnimation {
+  from {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,155 @@
+.sai_whatgpt3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 6rem;
+
+  padding: 2rem 4rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sai_whatgpt3_second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sai_whatgpt3_second p {
+  color: #ff8a71;
+  font-family: var(--font-family);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.sai_whatgpt3_second h1 {
+  font-family: var(--font-family);
+
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+.sai_whatgpt3_third {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+.sai_whatgpt3_first .sai_feature {
+  flex-direction: row;
+}
+.sai_whatgpt3_first .sai_feature_text {
+  flex: 2;
+  margin-top: 0px;
+}
+@media screen and (max-width: 1000px) {
+  .sai_whatgpt3_second h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .sai_whatgpt3 {
+    padding: 1.5rem 3rem;
+  }
+  .sai_whatgpt3_first .sai_feature_text {
+    margin-left: 1rem;
+  }
+  .sai_whatgpt3 {
+    margin: 0rem 5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .sai_whatgpt3_second h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .sai_whatgpt3 {
+    padding: 0.5rem 1rem;
+  }
+  .sai_whatgpt3_first .sai_feature_text {
+    flex: 1;
+  }
+  .sai_whatgpt3_second p {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .sai_whatgpt3 {
+    margin: 0rem 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sai_whatgpt3_second h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .sai_whatgpt3_second p {
+    margin-left: 5px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .sai_whatgpt3_first .sai_feature {
+    flex-direction: column;
+  }
+  .sai_whatgpt3_third {
+    flex-wrap: wrap;
+  }
+  .sai_whatgpt3_first .sai_feature_text {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .sai_whatgpt3 {
+    margin: 0rem 3rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .sai_whatgpt3_second h1 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .sai_whatgpt3_second p {
+    display: none;
+  }
+  .sai_whatgpt3 {
+    margin: 0rem 1.5rem;
+  }
+}

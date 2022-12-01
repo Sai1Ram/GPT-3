@@ -1,0 +1,106 @@
+.sai_possibility {
+  display: flex;
+}
+.sai_possibility_img img {
+  width: 100%;
+  height: 100%;
+}
+.sai_possibility_img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+.sai_possibility_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-family: var(--font-family);
+}
+.sai_possibility_content h1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  margin-top: 1.5rem;
+}
+.sai_possibility_content h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+}
+.sai_possibility_content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 2rem 0rem;
+}
+@media screen and (max-width: 680px) {
+  .sai_possibility {
+    display: flex;
+    flex-direction: column;
+  }
+  .sai_possibility_content h1 {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    margin-top: 1rem;
+  }
+  .sai_possibility_content p {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 1.6rem 0rem;
+  }
+  .sai_possibility_content h5 {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sai_possibility_content h1 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0.5rem;
+  }
+  .sai_possibility_content p {
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0.5rem 0rem;
+  }
+  .sai_possibility_content h5 {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .sai_possibility_img {
+    display: none;
+  }
+  .sai_possibility_content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../assets/possibility.png") no-repeat center
+      center/cover;
+    left: 0px;
+
+    opacity: 0.08;
+  }
+}
+@media screen and (max-width: 200px) {
+  .sai_possibility_content h1 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .sai_possibility_content p {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .sai_possibility_content h5 {
+    font-size: 5px;
+    line-height: 8px;
+  }
+}
